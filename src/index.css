@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-surface font-body text-on-surface selection:bg-primary selection:text-on-primary-fixed;
+  }
+}
+
+.kinetic-grid {
+  background-image: radial-gradient(circle at 2px 2px, #1a1a1a 1px, transparent 0);
+  background-size: 24px 24px;
+}
+
+.glow-mask {
+  mask-image: linear-gradient(to bottom, black, transparent);
+}
